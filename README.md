@@ -1,26 +1,26 @@
-# Backup Automatizado
+# Automated Backup
 
-Script Python para backup automatizado de pastas, com geração de logs e controle de arquivos antigos.
+Python script for automated folder backup, with log generation and old file control.
 
-## O que faz
+## What it does
 
-- Compacta a pasta de origem em `.zip` com data e hora no nome
-- Salva o backup na pasta de destino configurada
-- Registra cada execução em um arquivo de log
-- Remove automaticamente backups antigos conforme o limite configurado
+- Compresses the source folder into `.zip` with date and time in the filename
+- Saves the backup to the configured destination folder
+- Logs each execution in a log file
+- Automatically removes old backups based on a defined limit
 
-## Como usar
+## How to use
 
-1. Clone o repositório
-2. Edite o `config.py` com os caminhos da sua máquina
-3. Execute o script:
+1. Clone the repository
+2. Edit `config.py` with your local paths
+3. Run the script:
 python backup.py
 
-## Automação
+## Automation
 
-Para rodar automaticamente, configure o Agendador de Tarefas do Windows apontando para o `backup.py`.
+To run automatically, configure the Windows Task Scheduler pointing to `backup.py`.
 
-## Tecnologias
+## Technologies
 
 - Python
 - shutil
